@@ -1,0 +1,39 @@
+.card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+}
+
+.elevated {
+  box-shadow: var(--shadow-sm);
+}
+
+.elevated:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-glass);
+}
+
+.flat {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* Padding */
+.p-none { padding: 0; }
+.p-sm { padding: 1rem; }
+.p-md { padding: 1.5rem; }
+.p-lg { padding: 2rem; }

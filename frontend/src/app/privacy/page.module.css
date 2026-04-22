@@ -1,0 +1,35 @@
+.main {
+  padding: 160px 0 80px;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  font-weight: 850;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-surface);
+  padding: 4rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+}
+
+.content h2 {
+  margin: 2rem 0 1rem;
+}
+
+.content p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,114 @@
+.main {
+  padding: 160px 0 80px;
+  min-height: 100vh;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 3rem;
+  width: fit-content;
+}
+
+.backLink:hover {
+  color: var(--primary-color);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.featureCard {
+  padding: 4rem !important;
+}
+
+.iconHeader {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 97, 255, 0.05);
+  color: var(--primary-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconHeader h1 {
+  font-size: 3rem;
+  font-weight: 850;
+}
+
+.desc {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.details ul {
+  list-style: none;
+}
+
+.details li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.actionCard {
+  padding: 3rem !important;
+  position: sticky;
+  top: 120px;
+}
+
+.lockedState, .readyState {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.lockIcon {
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 968px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
